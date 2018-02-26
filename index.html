@@ -8,29 +8,154 @@
 </head>
 
 <body>
-  <div class="grid">
-    <section>
-      <h1>Process Cards</h1>
+  <h1>How to Teach the Process Cards</h1>
+  <section>
+    <blockquote>
+      <p>“Sometimes when I attack new projects I get overwhelmed with the task, but the cards helped me break things down
+        into small steps.”</p>
+      <p class="author">– John Smith, Jeb 2018 Cohort</p>
+    </blockquote>
 
-      <blockquote>
-        <p>“Sometimes when I attack new projects I get overwhelmed with the task, but the cards helped me break things down into
-          small steps.”</p>
-        <p class="author">– John Smith, Jeb 2018 Cohort</p>
-      </blockquote>
+    <p>Hi! It’s Kay here.</p>
 
-      <p>We’ve helped thousands of developers get their first job. Over that time we've learned a thing or two about what can hold developers back, as well as what can propel them forward.</p>
+    <p>So you’ve chosen to share some of your learning with a fellow developer. That’s great! You might be saving them days
+      or even weeks of frustration, and helping them reach their goals. It makes me happy to think about that!</p>
 
-      <p>These cards are designed to help you develop an effective process for making software. They break down your craft into eight separate activities, each with their own role to play.</p>
+    <p>This is a guide to help you give them the main pointers, but you should feel free to pass on your wisdom as you go.
+      The great thing about the cards is you can use them so many different ways, and I’m sure they’ll want to know all
+      about it.</p>
 
-      <p>If you often find yourself at the end of a long day of programming without achieving as much as you'd like — these cards are for you.</p>
+    <p>You’ll need:</p>
 
-      <div class="buttons">
-        <button><a href="#a">Get the cards</a></button>
-        <button><a href="#b">Learn how to use them</a></button>
-      </div>
-    </section>
-    <div class="background"></div>
-  </div>
+    <ul>
+      <li>This guide (nice!)</li>
+      <li>A set of cards to give them (there are eight)</li>
+      <li>A computer</li>
+    </ul>
+
+    <p>You’ll also want to have used the cards recently, so it’s fresh in your mind.</p>
+
+    <h2>The kickoff</h2>
+    <p>Sit them down and spread out the cards on the desk. Demonstrate that the cards match up by colour. Explain that they
+      are designed to help structure your approach to programming, to avoid going off on big tangents or not getting as
+      much done. Talk a little about how they’ve come in useful for you.</p>
+
+    <p>Explain to your friend that the rule is you can only do the activity on the last card you put down — so if you put
+      down the
+      <strong>Plan</strong> card, you’re /only/ allowed to do the
+      <strong>Plan</strong> activity until you’ve completed it.</p>
+
+    <p>Go through the six main cards and explain what they’re for. Here’s a reminder:</p>
+
+    <ul>
+      <li>
+        <strong>Read & Refine</strong>. Read the task you’ve been given, or refine your own task down to something defined.</li>
+      <li>
+        <strong>Plan</strong>. Decide on a 15-minute chunk to do and plan roughly how you’ll do it.</li>
+      <li>
+        <strong>Test</strong>. Write a test for the functionality you’re going to add.</li>
+      <li>
+        <strong>Implement</strong>. Make the test pass.</li>
+      <li>
+        <strong>Refactor</strong>. Reflect on and improve the code.</li>
+      <li>
+        <strong>Commit</strong>. Commit your changes.</li>
+      <li>Then back to
+        <strong>Plan</strong>!</li>
+    </ul>
+
+    <p>Then talk about the timer. Another reminder:</p>
+    <ul>
+      <li>Start the 15 minute timer right after putting down the
+        <strong>Plan</strong> card.</li>
+      <li>Stop it right after putting down the
+        <strong>Refactor</strong> card.</li>
+      <li>If the timer goes off before you get there, slam down the
+        <strong>Revert</strong> card.</li>
+      <li>
+        <strong>Revert</strong> all your changes since the last commit.</li>
+      <li>
+        <strong>Simplify</strong> to pick a smaller or simpler step.</li>
+      <li>And back to
+        <strong>Plan</strong> with your new simpler task.</li>
+    </ul>
+
+    <p>When you say ’revert’ to them they’ll probably wince. It’s not always easy to play that card! Explain how it keeps
+      you from going off track, and keeps you focused on exactly the tricky problem or challenging learning opportunity
+      you need to work on. If you fancy it, explain a little bit about the zone of proximal development.</p>
+
+    <p>If they still seem distressed, tell them about <code>git add . && git stash</code> as a way to revert while still keeping the
+      code around to look at.</p>
+
+    <h2>The exercise</h2>
+    <p>The best way to learn how to use something is to see someone use it and then try it yourself!</p>
+
+    <p>Pick an exercise to do with your friend. Try to keep it inside their comfort zone — we want them focusing on the cards
+      for now. A few ones I’ve found useful are:</p>
+
+    <ul>
+      <li>The bank tech test</li>
+      <li>A twitter clone</li>
+      <li>A battleships game</li>
+    </ul>
+
+    <p>Start with them navigating and you driving. Prompt them to use the cards as the navigator to guide the process. Don’t
+      forget the timer!</p>
+
+    <p>Depending on how much time you have, you might want to just do the first cycle or two, or keep going to complete the
+      whole thing. Don’t shy away from offering your experience!</p>
+
+    <h2>Booster topics</h2>
+    <p>If they come up, dropping in the following booster topics can help make their process even better.</p>
+
+    <h3>Thinking from the user’s perspective</h3>
+    <p>When you’re in
+    <strong>Plan</strong> or
+    <strong>Test</strong>, ensure you think from the user’s perspective — not yours. That means thinking about how the user interacts
+    with the program, not about how you’ll organise your data!</p>
+
+    <p>A good example:<br>
+    The user makes a deposit and then sees it on their bank statement.</p>
+
+    <p>A bad example:<br>
+    I add a class with a deposit method and a print statement method.</strong>
+
+    <h3>Using diagrams</h3>
+    <p>Especially in
+    <strong>Plan</strong>, but also throughout, you’ll benefit from drawing stuff out. Try these:</p>
+
+    <ul>
+      <li>Sketching out the user interactions (even for command line apps!)</li>
+      <li>Diagramming how you’ll organise your objects</li>
+      <li>Drawing a sequence diagram to figure out your methods</li>
+    </ul>
+
+    <p>Be careful though — especially at the beginning you can get caught up doing too many class organisation diagrams. I rarely
+    do them until I’m a few cycles in to development. Keep it simple and focus on the user.</p>
+
+    <h3>Simplification</h3>
+    <p>It’s not always obvious how to make something simpler, and sometimes people feel like they’re cheating! Don’t worry about
+    that, no one’s going to fire you for solving problems in simple chunks rather than all at once. Here are a few techniques:</p>
+    <ul>
+      <li>
+        <strong>Doing fewer things at once.</strong>
+        <br> If you’re trying to set up a web server with a database, try just setting up the web server.</li>
+      <li>
+        <strong>Solving a smaller version of the problem.</strong>
+        <br> If you’re making a 10x10 game board, try making a 2x2 one.</li>
+      <li>
+        <strong>Hard-coding something</strong>
+        <br> If you’re trying to send an SMS with the current time in it, try sending the SMS with a fixed time.</li>
+    </ul>
+
+    <h2>The Aftermath</h2>
+    <p>You’re done! Check in with them in a week or two to see how it’s all going.</p>
+
+    <p>Thanks for sharing your experience with them! Part of the tradition of software engineering is passing on your knowledge,
+      and if you haven’t taken your place in that already — now you have.</p>
+
+    <p>And next time someone asks you about the cards — consider sending them to your friend.</p>
+  </section>
 </body>
 
 </html>
